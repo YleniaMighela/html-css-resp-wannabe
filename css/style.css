@@ -1,6 +1,6 @@
 /*************************************************
-    GENERAL STYLES
- *************************************************/
+GENERAL STYLES
+*************************************************/
 *,
 *::before,
 *::after {
@@ -42,8 +42,8 @@ img {
 }
 
 /************************************************
-    UTILITIES
- ************************************************/
+UTILITIES
+************************************************/
 
 /* LAYOUT */
 .container {
@@ -67,8 +67,8 @@ img {
 }
 
 /************************************************
-    SITE SECTIONS
- ************************************************/
+SITE SECTIONS
+************************************************/
 
 /* HEADER */
 .site-header {
@@ -125,19 +125,67 @@ img {
 }
 
 /************************************************
-    SOLUZIONE RESPONSIVE
- ************************************************/
+SOLUZIONE RESPONSIVE
+************************************************/
 
- /*  layout tablet */
+/*  layout tablet */
 
- @media screen and (max-width:768px) {
-
+@media screen and (max-width:768px) {
+    
     .container{
         width:100%;
-
+        
     }
- }
+}
 
 
+/*  layout mobile */
 
+@media screen and (max-width:480px) {
+    
+    .row{
+        display: block;
+    }
+    
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width:100%;
+    }
+
+    /* sezione lessons */
+    .lessons .col{
+        width: 100%;
+        margin-bottom:50px;
+    }
+
+    /* sezione steps */
+    .steps .col{
+        width:100%;
+        
+    }
+
+    .steps{
+        margin:0;
+    }
+
+    /* sezione why us */
+
+    .why-us .col-left{
+        width:100%;
+        margin-bottom: 40px;
+    }
+
+    .why-us .col-right{
+        width:100%;
+    }
+
+     body .why-us{
+        background-color: #222222;
+        padding-top:50px;
+        margin-bottom:0;
+        
+    }
+}
 
